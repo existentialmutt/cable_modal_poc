@@ -53,6 +53,6 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem "view_component", "~> 2.34"
+gem "view_component", "~> 2.34", require: "view_component/engine"
 
 gem "cable_ready", "= 5.0.0pre1"
