@@ -14,5 +14,8 @@ CableReady.configure do |config|
   # Define your own custom operations
   # https://cableready.stimulusreflex.com/customization#custom-operations
 
-  # config.add_operation_name :jazz_hands
+  config.add_operation_name :open_modal
+  config.add_operation_name :update_modal
+  config.add_operation_name :close_modal
+  config.add_operation_name :visit
 end

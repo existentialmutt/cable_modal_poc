@@ -40,6 +40,8 @@ group :development do
   gem 'listen', '~> 3.3'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  gem "rubocop"
+  gem "standard"
 end
 
 group :test do
@@ -56,3 +58,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "view_component", "~> 2.34", require: "view_component/engine"
 
 gem "cable_ready", "= 5.0.0pre1"
+
+gem "stimulus-rails", "~> 0.2.4"
