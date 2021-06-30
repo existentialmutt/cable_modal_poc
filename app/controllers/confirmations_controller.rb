@@ -10,12 +10,12 @@ class ConfirmationsController < ApplicationController
     respond_to do |format|
       format.cable_modal do
         logger.debug "Cable Modal Format"
-        render operations: cable_car.open_modal(
+        render operations: cable_car.update_modal(
           html: self.class.render(
             template: "confirmations/new",
             assigns: {confirmation: @confirmation},
             layout: "cable_modal"
-          ))
+          )).open_modal
       end
     end
 

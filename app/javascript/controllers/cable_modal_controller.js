@@ -29,8 +29,6 @@ export default class extends Controller {
   }
 
   openModal = operation => {
-    this.contentTarget.innerHTML = operation.html
-    this.modal.handleUpdate()
     this.modal.show()
   }
 
