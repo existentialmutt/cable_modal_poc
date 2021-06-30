@@ -1,24 +1,6 @@
-# README
+# Cable Modal POC
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+I'm updating [existentialmutt/ajax_modal_rails](http://github.com/existentialmutt/ajax_modal_rails) to use mrujs, cable_car, and stimulus.
 
-Things you may want to cover:
+This is the proof of concept app, from which the gem will be extracted.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

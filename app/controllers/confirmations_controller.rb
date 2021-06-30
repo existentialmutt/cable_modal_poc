@@ -14,7 +14,8 @@ class ConfirmationsController < ApplicationController
           html: self.class.render(
             template: "confirmations/new",
             assigns: {confirmation: @confirmation},
-            layout: "cable_modal"
+            layout: "cable_modal",
+            format: "cable_modal"
           )).open_modal
       end
     end
@@ -37,7 +38,8 @@ class ConfirmationsController < ApplicationController
             html: self.class.render(
               template: "confirmations/new",
               assigns: {confirmation: @confirmation},
-              layout: "cable_modal"
+              layout: "cable_modal",
+              format: "cable_modal"
             ))
         end
       end
