@@ -28,7 +28,7 @@ class ConfirmationsController < ApplicationController
     respond_to do |format|
       format.cable_modal do
         if @confirmation.valid?
-          if params[:submit] == "Submit And Close"
+          if params[:commit] == "Submit And Close"
             render operations: cable_car.close_modal
           else
             render operations: cable_car.visit(url: confirmations_path)
