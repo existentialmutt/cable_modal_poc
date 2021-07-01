@@ -9,7 +9,7 @@
   </div>
 </div>
 
-<%= form_with model: @confirmation, data: {remote: true, type: "text/vnd.cable-modal.json"} do |f| %>
+<%= form_with model: @confirmation, data: {remote: true, type: "cable-modal"} do |f| %>
 
   <div class="form-check">
     <%= f.check_box :tos, class: "form-check-input" %>
