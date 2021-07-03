@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/existentialmutt/cable_ready.git
+  revision: b5e0d4ffd885ac8a4fc6917fd6da0c29f2da266d
+  branch: register_mime_type
+  specs:
+    cable_ready (5.0.0.pre1)
+      rails (>= 5.2)
+      thread-local (>= 1.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -68,9 +77,6 @@ GEM
       msgpack (~> 1.0)
     builder (3.2.4)
     byebug (11.1.3)
-    cable_ready (5.0.0.pre1)
-      rails (>= 5.2)
-      thread-local (>= 1.1.0)
     capybara (3.35.3)
       addressable
       mini_mime (>= 0.1.3)
@@ -224,7 +230,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.4.4)
   byebug
-  cable_ready (= 5.0.0pre1)
+  cable_ready!
   capybara (>= 3.26)
   jbuilder (~> 2.7)
   listen (~> 3.3)

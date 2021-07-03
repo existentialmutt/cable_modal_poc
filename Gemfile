@@ -56,6 +56,6 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
-gem "cable_ready", "= 5.0.0pre1"
+gem "cable_ready", github: "existentialmutt/cable_ready", branch: "register_mime_type"
 
 gem "stimulus-rails", "~> 0.2.4"

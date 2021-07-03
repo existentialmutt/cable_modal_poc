@@ -4217,10 +4217,9 @@ move-concurrently@^1.0.1:
     rimraf "^2.5.4"
     run-queue "^1.0.3"
 
-mrujs@0.3.0-beta.24:
-  version "0.3.0-beta.24"
-  resolved "https://registry.yarnpkg.com/mrujs/-/mrujs-0.3.0-beta.24.tgz#e20e3390574da00a81e62ac9b47e38f75bba194a"
-  integrity sha512-0hLizzBhKnOUzhlenupYkjwZ5RG9L2H+0m7MekqgMNEa2curP1f0xe2Gjp6BFg7071w27aRGs1XyWvJwmy4d+w==
+mrujs@existentialmutt/mrujs#feat/cable-car-default-mime-type:
+  version "0.3.0-beta.26"
+  resolved "https://codeload.github.com/existentialmutt/mrujs/tar.gz/4a0043c4c7e609ff64e90ba803b1d4833ad3a2bd"
   dependencies:
     morphdom ">=2.6.0 <3.0.0"
 

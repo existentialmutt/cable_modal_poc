@@ -1,3 +1,7 @@
+# Branch notes
+
+this branch was created to demo proposed changes to cable_ready and mrujs
+
 # Cable Modal Proof of Concept
 
 ![Demo screencast](/demo.gif)
@@ -13,5 +17,4 @@ The demo screencast shows a basic modal workflow:
   - dismiss the modal
   - OR
   - reload the underlying page.
-
 

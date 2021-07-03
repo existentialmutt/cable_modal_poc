@@ -13,10 +13,10 @@ import "controllers"
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import CableReady from 'cable_ready'
-import mrujs, { CableCar } from "mrujs"
-mrujs.registerMimeTypes(
-  [
-    {shortcut: "cablecar", header: "text/vnd.cablecar.json"}
-  ]
-)
+
+// can't load mrujs from a github branch so I've vendored the dist
+// directory for demo purposes
+import mrujs, { CableCar } from "../mrujs_local_dist"
+// import mrujs, { CableCar } from "mrujs"
+
 mrujs.start({plugins: [new CableCar(CableReady)]});
