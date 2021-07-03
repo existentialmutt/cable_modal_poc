@@ -6,7 +6,6 @@
 import mrujs from "mrujs";
 mrujs.registerMimeTypes(
   [
-    {shortcut: "cable-modal", header: "text/vnd.cable-modal.json"},
     {shortcut: "cablecar", header: "text/.json"}
   ]
 )
