@@ -1,5 +1,4 @@
 import { Controller } from "stimulus"
-import mrujs from "mrujs"
 import CableReady from 'cable_ready'
 import {Modal} from "bootstrap"
 
