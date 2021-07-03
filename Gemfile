@@ -59,3 +59,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "cable_ready", "= 5.0.0pre1"
 
 gem "stimulus-rails", "~> 0.2.4"
+
+gem "russian_hill"

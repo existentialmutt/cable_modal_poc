@@ -6,7 +6,8 @@
 import mrujs from "mrujs";
 mrujs.registerMimeTypes(
   [
-    {shortcut: "cable-modal", header: "text/vnd.cable-modal.json"}
+    {shortcut: "cable-modal", header: "text/vnd.cable-modal.json"},
+    {shortcut: "cablecar", header: "text/.json"}
   ]
 )
 mrujs.start();
@@ -17,3 +18,6 @@ Turbolinks.start()
 import "controllers"
 
 import 'bootstrap/dist/css/bootstrap.min.css'
+
+import CableReady from "cable_ready"
+window.CableReady = CableReady

@@ -1,0 +1,5 @@
+operations.morph(selector: "#message", html: @message)
+
+operations.inner_html(selector: "#inner", html: "Hi inner!")
+
+operations.outer_html(selector: "#outer", html: render(partial: "message", formats: :html))
