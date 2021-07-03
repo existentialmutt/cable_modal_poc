@@ -1,5 +1,8 @@
 <div class="mt-5">
-  <%= link_to "Review Terms of Service", new_confirmation_path, data: {remote: "true", type: "cable-modal"} %>
+  <%= link_to "Review Terms of Service (this link comes down from the server with data-remote so it should work :) )", new_confirmation_path, data: {cable_car: true, remote: true} %>
+  <br>
+  <br>
+  <%= link_to "Review Terms of Service (this link has data-remote added by mrujs cablecar plugin and doesn't work :( )", new_confirmation_path, data: {cable_car: true} %>
 </div>
 
 rendered at <%= Time.current.to_s %>

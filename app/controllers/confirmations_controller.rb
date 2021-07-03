@@ -8,14 +8,13 @@ class ConfirmationsController < ApplicationController
     @confirmation = Confirmation.new
 
     respond_to do |format|
-      format.cable_modal do
+      format.json do
         logger.debug "Cable Modal Format"
         render operations: cable_car.update_modal(
           html: self.class.render(
             template: "confirmations/new",
             assigns: {confirmation: @confirmation},
             layout: "cable_modal",
-            format: "cable_modal"
           )).open_modal
       end
     end
@@ -26,7 +25,7 @@ class ConfirmationsController < ApplicationController
   def create
     @confirmation = Confirmation.new(confirmation_params)
     respond_to do |format|
-      format.cable_modal do
+      format.json do
         if @confirmation.valid?
           if params[:commit] == "Submit And Close"
             render operations: cable_car.close_modal
