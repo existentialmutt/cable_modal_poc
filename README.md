@@ -14,4 +14,4 @@ The demo screencast shows a basic modal workflow:
   - OR
   - reload the underlying page.
 
-
+All interactions are performed with mrujs decorated links and form submits that request CableReady custom operations from the server.
